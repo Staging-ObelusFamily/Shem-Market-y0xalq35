@@ -29,9 +29,10 @@ jobs:
 
       - name: Wilco checks
         id: Wilco
-        uses: trywilco/actions@main
+        uses: trywilco/actions@localdev
         with:
           owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
   Lint:
     runs-on: ubuntu-latest
     timeout-minutes: 10
