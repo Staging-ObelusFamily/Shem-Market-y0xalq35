@@ -29,7 +29,7 @@ jobs:
 
       - name: Wilco checks
         id: Wilco
-        uses: trywilco/actions@main
+        uses: trywilco/actions@localdev
         with:
           owner: ${{ github.repository_owner }}
   Lint:
